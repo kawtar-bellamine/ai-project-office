@@ -1,0 +1,67 @@
+# Jeu de recette de l'assistant : questions formulées comme un technicien les poserait.
+# source = mode opératoire attendu ; fait = élément qui doit figurer dans la réponse ; hors_perimetre = refus attendu.
+questions:
+  - {q: "Combien de techniciens faut-il pour changer le roulement d'une pompe ?", source: MO-01, fait: "deux techniciens"}
+  - {q: "À quelle température chauffer le roulement neuf avant de le monter ?", source: MO-01, fait: "110 °C"}
+  - {q: "Quel couple de serrage pour les vis du palier de pompe ?", source: MO-01, fait: "45 N·m"}
+  - {q: "Quelle tolérance d'alignement entre la pompe et le moteur ?", source: MO-01, fait: "0,05 mm"}
+  - {q: "Quel niveau vibratoire maximum après remontage de la pompe ?", source: MO-01, fait: "4,5 mm/s"}
+  - {q: "Comment extraire le roulement usé ?", source: MO-01, fait: "extracteur hydraulique"}
+  - {q: "Quelle habilitation pour faire une consignation électrique ?", source: MO-02, fait: "BC"}
+  - {q: "Quelle est la première étape de la consignation d'un départ moteur ?", source: MO-02, fait: "sectionneur"}
+  - {q: "Avec quoi vérifier l'absence de tension ?", source: MO-02, fait: "VAT"}
+  - {q: "À partir de quelle tension la mise à la terre est-elle obligatoire ?", source: MO-02, fait: "1000 V"}
+  - {q: "À qui remettre l'attestation de consignation ?", source: MO-02, fait: "chargé de travaux"}
+  - {q: "Comment condamner le sectionneur en position ouverte ?", source: MO-02, fait: "cadenas"}
+  - {q: "Tous les combien étalonner un transmetteur de pression ?", source: MO-03, fait: "12 mois"}
+  - {q: "Combien de points de mesure pour l'étalonnage du transmetteur ?", source: MO-03, fait: "Cinq points"}
+  - {q: "Quelle erreur maximale tolérée pour le transmetteur de pression ?", source: MO-03, fait: "0,25 %"}
+  - {q: "Dans quel délai enregistrer le constat de vérification dans la GMAO ?", source: MO-03, fait: "48 heures"}
+  - {q: "Que faire si l'écart du transmetteur dépasse la tolérance ?", source: MO-03, fait: "ajusté"}
+  - {q: "Le calibrateur de référence doit être raccordé à quoi ?", source: MO-03, fait: "COFRAC"}
+  - {q: "Quelle charge minimale pendant la thermographie d'une armoire ?", source: MO-04, fait: "40 %"}
+  - {q: "Quelle résolution minimale pour la caméra thermique ?", source: MO-04, fait: "320 x 240"}
+  - {q: "À partir de quel échauffement parle-t-on d'anomalie majeure ?", source: MO-04, fait: "15 °C"}
+  - {q: "Sous combien de jours corriger une anomalie thermique majeure ?", source: MO-04, fait: "7 jours"}
+  - {q: "Que contient le rapport de thermographie ?", source: MO-04, fait: "image thermique"}
+  - {q: "Tous les combien regraisser les roulements d'un gros moteur ?", source: MO-05, fait: "4000 heures"}
+  - {q: "Quelle graisse utiliser pour les roulements moteur ?", source: MO-05, fait: "NLGI 2"}
+  - {q: "Quelle quantité de graisse par roulement ?", source: MO-05, fait: "30 grammes"}
+  - {q: "Au bout de combien de temps refermer la purge après graissage ?", source: MO-05, fait: "20 minutes"}
+  - {q: "Quelle température de palier signaler après graissage ?", source: MO-05, fait: "90 °C"}
+  - {q: "Tous les combien tester un détecteur de gaz fixe ?", source: MO-06, fait: "6 mois"}
+  - {q: "À quel pourcentage de la LIE est réglé le seuil d'alarme 2 ?", source: MO-06, fait: "40 %"}
+  - {q: "Quel temps de réponse maximum pour un détecteur de gaz ?", source: MO-06, fait: "30 secondes"}
+  - {q: "Quelle concentration pour le gaz étalon ?", source: MO-06, fait: "50 %"}
+  - {q: "Quel est le prix d'un roulement de pompe ?", hors_perimetre: true}
+  - {q: "Comment poser une demande de congés ?", hors_perimetre: true}
+  - {q: "Quel est le planning de l'équipe la semaine prochaine ?", hors_perimetre: true}
+  - {q: "Quelle est la procédure pour remplacer un disjoncteur haute tension ?", hors_perimetre: true}
+  - {q: "Quel fournisseur choisir pour les caméras thermiques ?", hors_perimetre: true}
+  - {q: "Combien coûte une habilitation électrique ?", hors_perimetre: true}
+  - {q: "Comment réinitialiser mon mot de passe ?", hors_perimetre: true}
+  - {q: "Quelle est la météo prévue sur le chantier demain ?", hors_perimetre: true}
+  - {q: "Qui est le responsable du site de production ?", hors_perimetre: true}
+  - {q: "Comment réparer une fuite sur un échangeur à plaques ?", hors_perimetre: true}
+  - {q: "Faut-il consigner la pompe avant de changer son roulement ?", source: MO-01, fait: "MO-02"}
+  - {q: "Combien de temps dure le remplacement du roulement de pompe ?", source: MO-01, fait: "3 heures"}
+  - {q: "Peut-on taper le roulement au marteau pour le sortir ?", source: MO-01, fait: "jamais au marteau"}
+  - {q: "Quand faire le relevé vibratoire après remontage de la pompe ?", source: MO-01, fait: "24 heures"}
+  - {q: "Qui remet le cadenas et la pancarte sur le sectionneur ?", source: MO-02, fait: "cadenas personnel"}
+  - {q: "Le VAT doit-il être contrôlé ?", source: MO-02, fait: "avant et après"}
+  - {q: "Combien de points relever sur la plage d'un capteur de pression ?", source: MO-03, fait: "Cinq points"}
+  - {q: "Après une intervention sur la boucle, faut-il réétalonner le transmetteur ?", source: MO-03, fait: "après toute intervention"}
+  - {q: "Classement d'un échauffement de 10 °C entre phases d'une armoire ?", source: MO-04, fait: "anomalie mineure"}
+  - {q: "Tous les combien faire la thermographie d'une armoire électrique ?", source: MO-04, fait: "une fois par an"}
+  - {q: "Quels moteurs doivent être regraissés toutes les 4000 heures ?", source: MO-05, fait: "55 kW"}
+  - {q: "Graisse-t-on le moteur à l'arrêt ou en marche ?", source: MO-05, fait: "moteur en marche"}
+  - {q: "Où est réglé le premier seuil d'alarme du détecteur de gaz ?", source: MO-06, fait: "20 %"}
+  - {q: "Que faire si le détecteur de gaz ne répond pas au test ?", source: MO-06, fait: "remplacé"}
+  - {q: "Comment surveiller la zone pendant le remplacement d'un détecteur de gaz fixe ?", source: MO-06, fait: "détecteur portatif"}
+  - {q: "Quel outil pour contrôler l'alignement pompe-moteur ?", source: MO-01, fait: "laser"}
+  - {q: "Combien de temps pour un audit 5S de l'atelier ?", hors_perimetre: true}
+  - {q: "Quelle est la durée de validité d'une habilitation BR ?", hors_perimetre: true}
+  - {q: "Comment commander des équipements de protection individuelle ?", hors_perimetre: true}
+  - {q: "Quel est le délai de livraison d'un moteur de 55 kW ?", hors_perimetre: true}
+  - {q: "Comment calibrer un débitmètre électromagnétique ?", hors_perimetre: true}
+  - {q: "Qui contacter en cas d'accident du travail ?", hors_perimetre: true}

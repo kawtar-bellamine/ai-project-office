@@ -1,0 +1,291 @@
+{
+  "seuil_de_refus": 0.29,
+  "poids_des_mots": 0.5,
+  "dev": {
+    "reponses_justes": 19,
+    "questions_dans_le_perimetre": 24,
+    "refus_justes": 6,
+    "questions_hors_perimetre": 8,
+    "exactitude": 0.781
+  },
+  "test": {
+    "reponses_justes": 20,
+    "questions_dans_le_perimetre": 24,
+    "refus_justes": 5,
+    "questions_hors_perimetre": 8,
+    "exactitude": 0.781,
+    "detail": [
+      {
+        "question": "À quelle température chauffer le roulement neuf avant de le monter ?",
+        "attendu": "MO-01",
+        "source": "refus",
+        "score": 0.28,
+        "correct": false
+      },
+      {
+        "question": "Quelle tolérance d'alignement entre la pompe et le moteur ?",
+        "attendu": "MO-01",
+        "source": "MO-01",
+        "score": 0.535,
+        "correct": true
+      },
+      {
+        "question": "Comment extraire le roulement usé ?",
+        "attendu": "MO-01",
+        "source": "MO-01",
+        "score": 0.377,
+        "correct": true
+      },
+      {
+        "question": "Quelle est la première étape de la consignation d'un départ moteur ?",
+        "attendu": "MO-02",
+        "source": "MO-02",
+        "score": 0.515,
+        "correct": true
+      },
+      {
+        "question": "À partir de quelle tension la mise à la terre est-elle obligatoire ?",
+        "attendu": "MO-02",
+        "source": "MO-02",
+        "score": 0.541,
+        "correct": true
+      },
+      {
+        "question": "Comment condamner le sectionneur en position ouverte ?",
+        "attendu": "MO-02",
+        "source": "MO-02",
+        "score": 0.431,
+        "correct": true
+      },
+      {
+        "question": "Combien de points de mesure pour l'étalonnage du transmetteur ?",
+        "attendu": "MO-03",
+        "source": "MO-03",
+        "score": 0.338,
+        "correct": true
+      },
+      {
+        "question": "Dans quel délai enregistrer le constat de vérification dans la GMAO ?",
+        "attendu": "MO-03",
+        "source": "MO-03",
+        "score": 0.786,
+        "correct": true
+      },
+      {
+        "question": "Le calibrateur de référence doit être raccordé à quoi ?",
+        "attendu": "MO-03",
+        "source": "MO-03",
+        "score": 0.67,
+        "correct": true
+      },
+      {
+        "question": "Quelle résolution minimale pour la caméra thermique ?",
+        "attendu": "MO-04",
+        "source": "MO-04",
+        "score": 0.698,
+        "correct": true
+      },
+      {
+        "question": "Sous combien de jours corriger une anomalie thermique majeure ?",
+        "attendu": "MO-04",
+        "source": "MO-04",
+        "score": 0.595,
+        "correct": true
+      },
+      {
+        "question": "Tous les combien regraisser les roulements d'un gros moteur ?",
+        "attendu": "MO-05",
+        "source": "MO-05",
+        "score": 0.467,
+        "correct": true
+      },
+      {
+        "question": "Quelle quantité de graisse par roulement ?",
+        "attendu": "MO-05",
+        "source": "MO-05",
+        "score": 0.533,
+        "correct": true
+      },
+      {
+        "question": "Quelle température de palier signaler après graissage ?",
+        "attendu": "MO-05",
+        "source": "MO-05",
+        "score": 0.617,
+        "correct": true
+      },
+      {
+        "question": "À quel pourcentage de la LIE est réglé le seuil d'alarme 2 ?",
+        "attendu": "MO-06",
+        "source": "MO-06",
+        "score": 0.584,
+        "correct": true
+      },
+      {
+        "question": "Quelle concentration pour le gaz étalon ?",
+        "attendu": "MO-06",
+        "source": "MO-06",
+        "score": 0.501,
+        "correct": false
+      },
+      {
+        "question": "Comment poser une demande de congés ?",
+        "attendu": "refus",
+        "source": "refus",
+        "score": 0.054,
+        "correct": true
+      },
+      {
+        "question": "Quelle est la procédure pour remplacer un disjoncteur haute tension ?",
+        "attendu": "refus",
+        "source": "MO-02",
+        "score": 0.301,
+        "correct": false
+      },
+      {
+        "question": "Combien coûte une habilitation électrique ?",
+        "attendu": "refus",
+        "source": "refus",
+        "score": 0.26,
+        "correct": true
+      },
+      {
+        "question": "Quelle est la météo prévue sur le chantier demain ?",
+        "attendu": "refus",
+        "source": "refus",
+        "score": 0.054,
+        "correct": true
+      },
+      {
+        "question": "Comment réparer une fuite sur un échangeur à plaques ?",
+        "attendu": "refus",
+        "source": "refus",
+        "score": 0.052,
+        "correct": true
+      },
+      {
+        "question": "Combien de temps dure le remplacement du roulement de pompe ?",
+        "attendu": "MO-01",
+        "source": "refus",
+        "score": 0.19,
+        "correct": false
+      },
+      {
+        "question": "Quand faire le relevé vibratoire après remontage de la pompe ?",
+        "attendu": "MO-01",
+        "source": "MO-01",
+        "score": 0.4,
+        "correct": true
+      },
+      {
+        "question": "Le VAT doit-il être contrôlé ?",
+        "attendu": "MO-02",
+        "source": "MO-02",
+        "score": 0.379,
+        "correct": true
+      },
+      {
+        "question": "Après une intervention sur la boucle, faut-il réétalonner le transmetteur ?",
+        "attendu": "MO-03",
+        "source": "MO-03",
+        "score": 0.495,
+        "correct": true
+      },
+      {
+        "question": "Tous les combien faire la thermographie d'une armoire électrique ?",
+        "attendu": "MO-04",
+        "source": "MO-04",
+        "score": 0.3,
+        "correct": false
+      },
+      {
+        "question": "Graisse-t-on le moteur à l'arrêt ou en marche ?",
+        "attendu": "MO-05",
+        "source": "MO-05",
+        "score": 0.618,
+        "correct": true
+      },
+      {
+        "question": "Que faire si le détecteur de gaz ne répond pas au test ?",
+        "attendu": "MO-06",
+        "source": "MO-06",
+        "score": 0.523,
+        "correct": true
+      },
+      {
+        "question": "Quel outil pour contrôler l'alignement pompe-moteur ?",
+        "attendu": "MO-01",
+        "source": "MO-01",
+        "score": 0.509,
+        "correct": true
+      },
+      {
+        "question": "Quelle est la durée de validité d'une habilitation BR ?",
+        "attendu": "refus",
+        "source": "MO-01",
+        "score": 0.409,
+        "correct": false
+      },
+      {
+        "question": "Quel est le délai de livraison d'un moteur de 55 kW ?",
+        "attendu": "refus",
+        "source": "MO-05",
+        "score": 0.383,
+        "correct": false
+      },
+      {
+        "question": "Qui contacter en cas d'accident du travail ?",
+        "attendu": "refus",
+        "source": "refus",
+        "score": 0.121,
+        "correct": true
+      }
+    ]
+  },
+  "garde_fou": {
+    "réponse juste (fausse alerte ?)": {
+      "cas": 22,
+      "signales": 0,
+      "taux": 0.0
+    },
+    "valeur modifiée": {
+      "cas": 14,
+      "signales": 14,
+      "taux": 1.0
+    },
+    "unité modifiée": {
+      "cas": 12,
+      "signales": 11,
+      "taux": 0.917
+    },
+    "citation supprimée": {
+      "cas": 22,
+      "signales": 22,
+      "taux": 1.0
+    },
+    "mauvaise source citée": {
+      "cas": 22,
+      "signales": 22,
+      "taux": 1.0
+    },
+    "invention hors périmètre": {
+      "cas": 6,
+      "signales": 6,
+      "taux": 1.0
+    },
+    "négation ajoutée": {
+      "cas": 18,
+      "signales": 18,
+      "taux": 1.0
+    },
+    "valeur d'une autre phrase": {
+      "cas": 13,
+      "signales": 13,
+      "taux": 1.0
+    },
+    "mot clé inversé (limite)": {
+      "cas": 8,
+      "signales": 0,
+      "taux": 0.0
+    }
+  }
+}

@@ -1,0 +1,171 @@
+# Portefeuille de cas d'usage IA pour un groupe de services énergie et industrie.
+# Toutes les valeurs sont des HYPOTHÈSES de démonstration, à remplacer par les chiffres
+# recueillis auprès des métiers pendant le cadrage. Aucune donnée réelle d'entreprise.
+hypotheses:
+  cout_horaire_charge_eur: 60      # coût chargé d'une heure de technicien ou de chargé d'affaires
+  cout_jour_data_science_eur: 700  # coût d'un jour de data scientist (interne ou prestataire)
+  horizon_annees: 3
+  incertitude: 0.30                # ± 30 % sur le temps gagné ; de -15 % à +30 % sur la charge de réalisation
+  incertitude_adoption: 0.50       # l'adoption par les utilisateurs est l'hypothèse la plus fragile
+
+use_cases:
+  - id: UC01
+    nom: Recherche de pièces détachées par photo
+    metier: Maintenance industrielle
+    utilisateurs: Techniciens de maintenance
+    probleme: Retrouver la référence d'une pièce usée sans plaque lisible prend du temps et des allers-retours.
+    technique: vision
+    volume_mois: 900
+    minutes_gagnees: 12
+    adoption: 0.6
+    autre_gain_eur_an: 0
+    donnees: 2          # 1 faible, 3 prêtes
+    complexite: 2       # 1 simple, 3 difficile
+    risque: 1           # 1 faible, 3 élevé (sécurité, données sensibles)
+    jours_realisation: 70
+    run_eur_an: 9000
+    critere_succes: Bonne référence dans les 5 premières propositions pour 80 % des photos de test.
+  - id: UC02
+    nom: Assistant RAG sur les procédures et modes opératoires
+    metier: Maintenance et travaux
+    utilisateurs: Techniciens, chefs d'équipe
+    probleme: Les procédures existent mais sont longues à retrouver sur le terrain.
+    technique: rag
+    volume_mois: 2500
+    minutes_gagnees: 6
+    adoption: 0.5
+    autre_gain_eur_an: 0
+    donnees: 3
+    complexite: 2
+    risque: 2
+    jours_realisation: 60
+    run_eur_an: 12000
+    critere_succes: Réponse sourcée et juste pour 90 % des questions de recette, refus sur les questions hors périmètre.
+  - id: UC03
+    nom: Synthèse des rapports d'intervention
+    metier: Maintenance industrielle
+    utilisateurs: Responsables d'affaires
+    probleme: Les rapports libres sont relus à la main pour la facturation et le suivi client.
+    technique: llm_extraction
+    volume_mois: 3000
+    minutes_gagnees: 4
+    adoption: 0.7
+    autre_gain_eur_an: 0
+    donnees: 3
+    complexite: 1
+    risque: 1
+    jours_realisation: 40
+    run_eur_an: 15000
+    critere_succes: Champs clés extraits justes à 95 % sur 200 rapports annotés.
+  - id: UC04
+    nom: Analyse des dossiers d'appel d'offres
+    metier: Développement commercial
+    utilisateurs: Chargés d'affaires
+    probleme: Lire un dossier de consultation complet pour repérer exigences et risques prend une demi-journée.
+    technique: rag
+    volume_mois: 120
+    minutes_gagnees: 150
+    adoption: 0.6
+    autre_gain_eur_an: 0
+    donnees: 2
+    complexite: 3
+    risque: 2
+    jours_realisation: 90
+    run_eur_an: 10000
+    critere_succes: 90 % des exigences contractuelles d'un dossier test retrouvées, chacune avec sa page source.
+  - id: UC05
+    nom: Classification des remontées HSE
+    metier: Qualité, sécurité, environnement
+    utilisateurs: Animateurs HSE
+    probleme: Les situations dangereuses remontées en texte libre sont triées à la main.
+    technique: classification
+    volume_mois: 600
+    minutes_gagnees: 4
+    adoption: 0.8
+    autre_gain_eur_an: 0
+    donnees: 3
+    complexite: 1
+    risque: 2
+    jours_realisation: 30
+    run_eur_an: 3000
+    critere_succes: Bonne catégorie pour 85 % des remontées, aucune situation grave classée comme mineure.
+  - id: UC06
+    nom: Contrôle de conformité des plans
+    metier: Bureau d'études
+    utilisateurs: Dessinateurs, projeteurs
+    probleme: La vérification des plans selon les règles internes est manuelle et répétitive.
+    technique: regles_vision
+    volume_mois: 400
+    minutes_gagnees: 15
+    adoption: 0.6
+    autre_gain_eur_an: 0
+    donnees: 2
+    complexite: 2
+    risque: 1
+    jours_realisation: 55
+    run_eur_an: 4000
+    critere_succes: 90 % des non-conformités d'un lot de plans annoté détectées.
+  - id: UC07
+    nom: Assistant de planification des interventions
+    metier: Exploitation et maintenance
+    utilisateurs: Planificateurs
+    probleme: Construire le planning hebdomadaire selon compétences, habilitations et urgences est long.
+    technique: agent
+    volume_mois: 200
+    minutes_gagnees: 30
+    adoption: 0.5
+    autre_gain_eur_an: 0
+    donnees: 1
+    complexite: 3
+    risque: 2
+    jours_realisation: 110
+    run_eur_an: 18000
+    critere_succes: Planning proposé accepté sans retouche majeure dans 70 % des cas.
+  - id: UC08
+    nom: Lecture automatique des factures fournisseurs
+    metier: Finance et achats
+    utilisateurs: Comptables fournisseurs
+    probleme: La saisie et le rapprochement des factures sont manuels.
+    technique: llm_extraction
+    volume_mois: 8000
+    minutes_gagnees: 1.5
+    adoption: 0.8
+    autre_gain_eur_an: 0
+    donnees: 3
+    complexite: 1
+    risque: 2
+    jours_realisation: 45
+    run_eur_an: 20000
+    critere_succes: 97 % des montants et références extraits justes, écarts signalés pour validation humaine.
+  - id: UC09
+    nom: Prévision des pannes d'équipements instrumentés
+    metier: Maintenance industrielle
+    utilisateurs: Ingénieurs fiabilité
+    probleme: Les arrêts non planifiés coûtent cher et les signaux faibles ne sont pas exploités.
+    technique: ml_predictif
+    volume_mois: 0
+    minutes_gagnees: 0
+    adoption: 0.6
+    autre_gain_eur_an: 120000
+    donnees: 1
+    complexite: 3
+    risque: 2
+    jours_realisation: 120
+    run_eur_an: 15000
+    critere_succes: Panne annoncée au moins 48 h à l'avance pour la moitié des défaillances, moins d'une fausse alarme par semaine.
+  - id: UC10
+    nom: Rédaction des comptes rendus de réunion de chantier
+    metier: Travaux
+    utilisateurs: Conducteurs de travaux
+    probleme: Les comptes rendus sont rédigés le soir à partir de notes manuscrites.
+    technique: llm_generation
+    volume_mois: 1500
+    minutes_gagnees: 10
+    adoption: 0.5
+    autre_gain_eur_an: 0
+    donnees: 3
+    complexite: 1
+    risque: 1
+    jours_realisation: 35
+    run_eur_an: 12000
+    critere_succes: Compte rendu validé avec moins de 3 corrections dans 80 % des cas.

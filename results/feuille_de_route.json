@@ -1,0 +1,172 @@
+[
+  {
+    "id": "UC03",
+    "nom": "Synthèse des rapports d'intervention",
+    "data_scientist": 1,
+    "segments": [
+      {
+        "phase": "Cadrage",
+        "debut": 0,
+        "fin": 2
+      },
+      {
+        "phase": "POC",
+        "debut": 2,
+        "fin": 6
+      },
+      {
+        "phase": "Pilote",
+        "debut": 6,
+        "fin": 11
+      },
+      {
+        "phase": "Recette",
+        "debut": 11,
+        "fin": 13
+      },
+      {
+        "phase": "Mise en service",
+        "debut": 13,
+        "fin": 15
+      }
+    ],
+    "livre_pendant_le_stage": true,
+    "fin_semaine": 15
+  },
+  {
+    "id": "UC08",
+    "nom": "Lecture automatique des factures fournisseurs",
+    "data_scientist": 2,
+    "segments": [
+      {
+        "phase": "Cadrage",
+        "debut": 0,
+        "fin": 2
+      },
+      {
+        "phase": "POC",
+        "debut": 2,
+        "fin": 6
+      },
+      {
+        "phase": "Pilote",
+        "debut": 6,
+        "fin": 12
+      },
+      {
+        "phase": "Recette",
+        "debut": 12,
+        "fin": 14
+      },
+      {
+        "phase": "Mise en service",
+        "debut": 14,
+        "fin": 16
+      }
+    ],
+    "livre_pendant_le_stage": true,
+    "fin_semaine": 16
+  },
+  {
+    "id": "UC10",
+    "nom": "Rédaction des comptes rendus de réunion de chantier",
+    "data_scientist": 1,
+    "segments": [
+      {
+        "phase": "Cadrage",
+        "debut": 9,
+        "fin": 11
+      },
+      {
+        "phase": "POC",
+        "debut": 11,
+        "fin": 14
+      },
+      {
+        "phase": "Pilote",
+        "debut": 14,
+        "fin": 19
+      },
+      {
+        "phase": "Recette",
+        "debut": 19,
+        "fin": 21
+      },
+      {
+        "phase": "Mise en service",
+        "debut": 21,
+        "fin": 23
+      }
+    ],
+    "livre_pendant_le_stage": true,
+    "fin_semaine": 23
+  },
+  {
+    "id": "UC04",
+    "nom": "Analyse des dossiers d'appel d'offres",
+    "data_scientist": 2,
+    "segments": [
+      {
+        "phase": "Cadrage",
+        "debut": 10,
+        "fin": 12
+      },
+      {
+        "phase": "POC",
+        "debut": 12,
+        "fin": 20
+      },
+      {
+        "phase": "Pilote",
+        "debut": 20,
+        "fin": 31
+      },
+      {
+        "phase": "Recette",
+        "debut": 31,
+        "fin": 33
+      },
+      {
+        "phase": "Mise en service",
+        "debut": 33,
+        "fin": 35
+      }
+    ],
+    "livre_pendant_le_stage": false,
+    "fin_semaine": 35
+  },
+  {
+    "id": "UC02",
+    "nom": "Assistant RAG sur les procédures et modes opératoires",
+    "data_scientist": 1,
+    "segments": [
+      {
+        "phase": "Cadrage",
+        "debut": 17,
+        "fin": 19
+      },
+      {
+        "phase": "POC",
+        "debut": 19,
+        "fin": 24
+      },
+      {
+        "phase": "Pilote",
+        "debut": 24,
+        "fin": 32
+      },
+      {
+        "phase": "Recette",
+        "debut": 32,
+        "fin": 34
+      },
+      {
+        "phase": "Mise en service",
+        "debut": 34,
+        "fin": 36
+      }
+    ],
+    "livre_pendant_le_stage": false,
+    "fin_semaine": 36
+  }
+]

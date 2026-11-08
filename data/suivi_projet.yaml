@@ -1,0 +1,18 @@
+# Suivi du projet UC02 (assistant sur les modes opératoires) à la semaine 8 : données de démonstration.
+projet: UC02 Assistant RAG sur les procédures et modes opératoires
+semaine: 8
+sponsor: Responsable méthodes
+seuil_recette: 0.90      # exactitude exigée par le sponsor pour autoriser la mise en service
+jalons:
+  - {nom: Cadrage validé, prevu: 2, reel: 2}
+  - {nom: Corpus de procédures collecté, prevu: 3, reel: 4}
+  - {nom: Jeu de recette construit avec le métier, prevu: 4, reel: 4}
+  - {nom: Preuve de concept, prevu: 7, reel: 8}
+  - {nom: Recette utilisateurs, prevu: 10, reel: null}
+  - {nom: Pilote sur deux équipes, prevu: 14, reel: null}
+risques:
+  - {risque: Procédures PDF non à jour, probabilite: 3, impact: 3, porteur: Méthodes, action: Revue des 40 procédures les plus consultées avant le pilote}
+  - {risque: Réseau absent sur une partie du site, probabilite: 2, impact: 2, porteur: DSI, action: Mode hors ligne sur tablette pour les procédures téléchargées}
+  - {risque: Réponse fausse appliquée sans vérifier la source, probabilite: 2, impact: 3, porteur: Chef de projet IA, action: Source affichée à chaque réponse et formation de 10 minutes}
+  - {risque: Faible adoption par les chefs d'équipe, probabilite: 2, impact: 2, porteur: Sponsor, action: Deux référents terrain associés à la recette}
+  - {risque: Données sensibles dans les questions, probabilite: 1, impact: 3, porteur: DSI, action: Journalisation anonymisée et hébergement validé}
